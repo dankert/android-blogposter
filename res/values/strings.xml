@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Blog!</string>
+    <string name="app_name">Blog</string>
+    <string name="save">Blog</string>
+    <string name="settings">Einstellunen</string>
+    <string name="mail">E-Mail</string>
+    <string name="upload">Hochladen</string>
+    <string name="url">URL</string>
+    <string name="param_image">Parameter Bild</string>
+    <string name="param_text">Text</string>
+    <string name="user">Benutzer</string>
+    <string name="password">Kennwort</string>
+    <string name="take_photo">Kamera</string>
+</resources>

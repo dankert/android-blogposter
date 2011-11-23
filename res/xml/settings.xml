@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/hello">
+	<PreferenceCategory android:title="@string/settings">
+		<EditTextPreference android:key="param_image"
+			android:title="@string/param_image"></EditTextPreference>
+		<EditTextPreference android:key="url"
+			android:title="@string/url"></EditTextPreference>
+	</PreferenceCategory>
+
+</PreferenceScreen>

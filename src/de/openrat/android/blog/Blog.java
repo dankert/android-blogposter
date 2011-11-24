@@ -30,6 +30,7 @@ public class Blog extends Activity
 	private ImageView image;
 	private EditText title;
 	private EditText text;
+	private Button button;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -50,7 +51,7 @@ public class Blog extends Activity
 				takePhoto();
 			}
 		});
-		Button button = (Button) findViewById(R.id.save);
+		button = (Button) findViewById(R.id.save);
 		button.setOnClickListener(new OnClickListener()
 		{
 
@@ -74,7 +75,7 @@ public class Blog extends Activity
 					startService(uploadIntent);
 
 				}
-				if (prefs.getBoolean("use_mail", false))
+				if (prefs.getBoolean("use_email", false))
 				{
 					final Intent mailIntent = new Intent(Blog.this,
 							MailIntentService.class);

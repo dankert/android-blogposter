@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical" android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
 
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="@string/hello" />
-		
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/param_title" />
 		<EditText android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:id="@+id/text" />
-		
-	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="@string/hello"
-		android:id="@+id/save" />
-		
-</LinearLayout>
+			android:layout_height="wrap_content" android:id="@+id/title" />
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/param_text" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/text" />
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/param_image" />
+		<ImageButton android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/image" />
+
+		<CheckBox android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/ispublic" android:text="@string/param_privacy" />
+
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/hello"
+			android:id="@+id/save" />
+
+	</LinearLayout>
+</ScrollView>

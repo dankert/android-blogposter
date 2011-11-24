@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/hello">
-	<PreferenceCategory android:title="@string/settings">
-		<EditTextPreference android:key="param_image"
-			android:title="@string/param_image"></EditTextPreference>
-		<EditTextPreference android:key="url"
-			android:title="@string/url"></EditTextPreference>
-	</PreferenceCategory>
 
+	<CheckBoxPreference android:key="use_email" android:title="@string/use_email" />
+
+	<PreferenceScreen android:dependency="use_email" android:title="@string/use_email">
+		<PreferenceCategory android:title="@string/settings">
+			<EditTextPreference android:key="url"
+				android:title="@string/url"></EditTextPreference>
+			<EditTextPreference android:key="http_user"
+				android:title="@string/user"></EditTextPreference>
+			<EditTextPreference android:key="http_password"
+				android:password="true" android:title="@string/password"></EditTextPreference>
+			<EditTextPreference android:key="param_title"
+				android:title="@string/param_title"></EditTextPreference>
+			<EditTextPreference android:key="param_text"
+				android:title="@string/param_text"></EditTextPreference>
+			<EditTextPreference android:key="param_image"
+				android:title="@string/param_image"></EditTextPreference>
+			<EditTextPreference android:key="param_privacy"
+				android:title="@string/param_privacy"></EditTextPreference>
+		</PreferenceCategory>
+	</PreferenceScreen>
+
+	<CheckBoxPreference android:key="use_upload" android:title="@string/use_upload" />
+
+	<PreferenceScreen android:dependency="use_upload" android:title="@string/use_upload">
+		<PreferenceCategory android:title="@string/settings">
+			<EditTextPreference android:key="recipient_address"
+				android:title="@string/param_image"></EditTextPreference>
+			<EditTextPreference android:key="smtp_host"
+				android:title="@string/url"></EditTextPreference>
+			<EditTextPreference android:key="smtp_user"
+				android:title="@string/user"></EditTextPreference>
+			<EditTextPreference android:key="smtp_password"
+				android:password="true" android:title="@string/password"></EditTextPreference>
+		</PreferenceCategory>
+	</PreferenceScreen>
 </PreferenceScreen>

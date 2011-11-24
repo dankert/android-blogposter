@@ -3,13 +3,22 @@
     <string name="hello">Hello World, Blog!</string>
     <string name="app_name">Blog</string>
     <string name="save">Blog</string>
-    <string name="settings">Einstellunen</string>
+    <string name="settings">Einstellungen</string>
     <string name="mail">E-Mail</string>
     <string name="upload">Hochladen</string>
+    <string name="upload_long">Hochladen der Daten</string>
+    <string name="upload_ok">Hochladen beendet</string>
+    <string name="upload_ok_long">Hochladen erfolgreich beendet</string>
+    <string name="upload_fail">Hochladen nicht erfolgreich</string>
+    <string name="upload_fail_long">Hochladen fehlgeschlagen</string>
     <string name="url">URL</string>
     <string name="param_image">Parameter Bild</string>
-    <string name="param_text">Text</string>
+    <string name="param_title">Parameter Titel</string>
+    <string name="param_text">Parameter Text</string>
+    <string name="param_privacy">Parameter Privacy</string>
     <string name="user">Benutzer</string>
     <string name="password">Kennwort</string>
     <string name="take_photo">Kamera</string>
+    <string name="use_email">Per E-Mail versenden</string>
+    <string name="use_upload">Hochladen</string>
 </resources>

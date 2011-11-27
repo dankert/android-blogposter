@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import de.openrat.android.blog.service.MailIntentService;
+import de.openrat.android.blog.service.UploadIntentService;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

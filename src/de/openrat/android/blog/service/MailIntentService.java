@@ -1,10 +1,16 @@
 /**
  * 
  */
-package de.openrat.android.blog;
+package de.openrat.android.blog.service;
 
 import java.io.File;
 import java.io.IOException;
+
+import de.openrat.android.blog.Blog;
+import de.openrat.android.blog.FileUtils;
+import de.openrat.android.blog.HTTPRequest;
+import de.openrat.android.blog.R;
+import de.openrat.android.blog.R.string;
 
 import android.app.IntentService;
 import android.app.Notification;

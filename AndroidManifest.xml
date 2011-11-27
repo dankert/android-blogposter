@@ -14,8 +14,8 @@
 
     <activity android:name="PreferencesActivity"></activity>
     
-    		<service android:name=".UploadIntentService"></service>
-		<service android:name=".MailIntentService"></service>
+    		<service android:name=".service.UploadIntentService"></service>
+		<service android:name=".service.MailIntentService"></service>
 </application>
 
 
